@@ -114,11 +114,7 @@ python main.py
 
 ---
 
-## 📸 Screenshots
 
-
-
-### App UI
 
 
 ---
