@@ -1,0 +1,21 @@
+If your Claude API request is returning a 401 error, your API key is invalid or missing — check that it is correctly set in your request headers as x-api-key.
+If you are hitting Claude API rate limits, you will receive a 429 error — wait for the rate limit window to reset or apply for a higher usage tier.
+Claude API rate limits are based on requests per minute and tokens per minute — both limits apply simultaneously.
+To check your Claude API usage and remaining quota, log in to console.anthropic.com and go to the Usage section.
+If your Claude API key is not working, regenerate it at console.anthropic.com → API Keys → Create New Key and update it in your application.
+Claude API billing is based on tokens consumed — input tokens and output tokens are billed separately at different rates.
+If you are being charged unexpectedly on your Claude API account, check your usage logs at console.anthropic.com → Usage for a breakdown by model and date.
+To set spending limits on your Claude API account, go to console.anthropic.com → Billing → Usage Limits and set a monthly cap.
+If Claude is producing harmful, biased, or unexpected output, review your system prompt and consider adding explicit instructions for tone and content restrictions.
+If Claude is not following your system prompt instructions, ensure the system prompt is being passed in the system field, not in the user messages array.
+Claude has a context window limit — if your conversation is too long, older messages may be truncated. Use summarization to manage long contexts.
+If you are getting timeout errors on Claude API calls, increase your request timeout setting — complex prompts can take 30-60 seconds to complete.
+Prompt caching on the Claude API can reduce costs by up to 90% for repeated prompts — enable it by adding cache_control to your messages.
+If you want to use Claude for a jailbreak or to generate harmful content, these requests will be refused as they violate Anthropic's usage policies.
+To appeal a Claude API account suspension, contact Anthropic support at support.anthropic.com with your account details and usage context.
+Claude API supports function calling and tool use — pass tools as a structured array in your API request to enable this feature.
+If Claude API responses are inconsistent, adjust the temperature parameter — lower values (0.0-0.3) give more deterministic outputs.
+The Claude API supports streaming responses — set stream to true in your request to receive tokens as they are generated.
+To migrate from an older Claude model to a newer one, update the model field in your API request to the new model string.
+If you need enterprise-level Claude API access with higher rate limits and dedicated capacity, contact Anthropic sales at anthropic.com/contact-sales.
+To contact Anthropic support for API issues, go to support.anthropic.com or email support@anthropic.com with your account and error details.

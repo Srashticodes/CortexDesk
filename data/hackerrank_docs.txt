@@ -1,0 +1,19 @@
+If your HackerRank code submission is not going through, try refreshing the page and resubmitting — the issue may be a temporary network timeout.
+If you are getting a compilation error on HackerRank, check that your language version matches the one selected in the submission settings.
+HackerRank test cases often include hidden edge cases — ensure your code handles empty inputs, large numbers, and boundary conditions.
+If your code passes all visible test cases but fails hidden ones, review the problem constraints and check for edge cases like zero values or maximum input sizes.
+If your HackerRank submission is timing out, optimize your algorithm — O(n²) solutions often fail on large inputs where O(n log n) is required.
+If the HackerRank IDE is not responding or is very slow, try using a different browser or clearing your browser cache and cookies.
+If you accidentally submitted the wrong solution, you may resubmit as long as the contest or challenge is still open.
+HackerRank does not allow code sharing during active contests — submissions are monitored for plagiarism using automated tools.
+If you are flagged for plagiarism on HackerRank, you will receive a notification — you can appeal the decision by contacting HackerRank support.
+If a HackerRank contest ended while you were mid-submission, contact support with your code and timestamp for review.
+If you cannot access a HackerRank assessment link, check that it has not expired and that you are logged into the correct account.
+HackerRank assessment links are tied to specific email addresses — ensure you are using the same email the link was sent to.
+If your HackerRank environment is not compiling a specific language, try switching to the web IDE and selecting the correct language version.
+If you experience input/output issues on HackerRank, check that you are reading from stdin and writing to stdout as required by the problem.
+If a HackerRank test appears to have incorrect expected output, you can report the issue using the flag or feedback option on the problem page.
+To improve your HackerRank rank, focus on completing challenges in algorithms, data structures, and problem solving domains.
+If your HackerRank score is not updating after submission, wait a few minutes and refresh — leaderboards can have a short delay.
+If you lost your HackerRank session mid-contest due to a browser crash, your code may be auto-saved — check the IDE editor on reload.
+To contact HackerRank support, go to support.hackerrank.com and submit a ticket describing the issue with your username and screenshot.

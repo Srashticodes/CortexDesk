@@ -1,0 +1,11 @@
+ticket_id,ticket_text
+1,My card was charged twice for the same transaction
+2,I think my card was used fraudulently without my permission
+3,Refund not received after cancelling my payment
+4,Unable to submit my code on HackerRank platform
+5,All my test cases are passing locally but failing on HackerRank
+6,Why is my API request failing on Claude?
+7,I am getting rate limit errors on Claude API
+8,My account seems hacked and I cannot login
+9,Payment failed but money deducted from my account
+10,How long does it take to process a refund?

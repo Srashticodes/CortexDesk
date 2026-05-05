@@ -1,0 +1,22 @@
+If your iPhone is frozen or unresponsive, perform a force restart by pressing Volume Up, then Volume Down, then holding the Side button until the Apple logo appears.
+If your iPhone won't turn on, connect it to a charger for at least 30 minutes before attempting a restart.
+If your Apple device was stolen, immediately put it in Lost Mode via Find My at findmy.apple.com to lock it and display a contact number.
+To report a stolen Apple device, use Find My to mark it as lost — this also disables Apple Pay on the device.
+If your Apple ID was hacked or compromised, go to appleid.apple.com immediately to change your password and enable two-factor authentication.
+If you see unauthorized charges on your Apple account, go to reportaproblem.apple.com to request a refund for any purchases you did not make.
+Apple refunds for unauthorized App Store or iTunes purchases are typically processed within 5-7 business days.
+To cancel an Apple subscription, go to Settings → Your Name → Subscriptions and tap the subscription to cancel it.
+If you were charged after cancelling an Apple subscription, contact Apple Support with your cancellation date and request a refund.
+iCloud storage upgrades can be managed under Settings → Your Name → iCloud → Manage Storage → Change Storage Plan.
+If your iCloud is not syncing, check your internet connection and ensure iCloud Drive is enabled under Settings → Your Name → iCloud.
+MacBook battery replacement is covered under AppleCare+ — schedule an appointment at an Apple Store Genius Bar or mail it in for repair.
+If your MacBook is not charging, try a different cable, reset the SMC, and check for debris in the charging port.
+Apple devices under warranty or AppleCare+ are eligible for free hardware repairs for manufacturing defects.
+To check your AppleCare+ coverage status, go to mysupport.apple.com or Settings → General → About → Limited Warranty.
+If your iPhone screen is cracked, schedule a screen repair at an Apple Store or Apple Authorized Service Provider.
+A bricked iPhone that does not respond can often be restored by connecting it to a Mac or PC and using Finder or iTunes to restore it.
+If your App Store purchase is not downloading, sign out of your Apple ID and sign back in, then retry the download.
+To transfer data to a new iPhone, use iCloud backup or QuickStart — go to Settings → General → Transfer or Reset iPhone.
+If you forgot your Apple ID password, go to appleid.apple.com and click Forgot Apple ID or Password to reset it.
+If two-factor authentication is locking you out, use account recovery by going to appleid.apple.com and starting the recovery process.
+To contact Apple Support, visit support.apple.com or use the Apple Support app to chat, call, or schedule a Genius Bar appointment.

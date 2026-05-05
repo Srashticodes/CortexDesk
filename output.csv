@@ -1,0 +1,33 @@
+ticket,domain,risk,decision,response
+My card was charged twice for the same transaction,Visa,low,respond,"Based on our support documentation:
+
+If your card is charged twice, the extra charge is usually reversed within 5-7 business days.
+"
+I think my card was used fraudulently without my permission,Visa,high,escalate,This issue is sensitive. Please contact support directly.
+Refund not received after cancelling my payment,Visa,low,respond,"Based on our support documentation:
+
+Refunds are processed within 7-10 working days after cancellation.
+"
+Unable to submit my code on HackerRank platform,HackerRank,low,respond,"Based on our support documentation:
+
+If your card is charged twice, the extra charge is usually reversed within 5-7 business days.
+"
+All my test cases are passing locally but failing on HackerRank,HackerRank,low,respond,"Based on our support documentation:
+
+Refunds are processed within 7-10 working days after cancellation.
+"
+Why is my API request failing on Claude?,Claude,low,respond,"Based on our support documentation:
+
+If your card is charged twice, the extra charge is usually reversed within 5-7 business days.
+"
+I am getting rate limit errors on Claude API,Claude,low,respond,"Based on our support documentation:
+
+If your card is charged twice, the extra charge is usually reversed within 5-7 business days.
+"
+My account seems hacked and I cannot login,Unknown,high,escalate,This issue is sensitive. Please contact support directly.
+Payment failed but money deducted from my account,Visa,low,respond,"Based on our support documentation:
+
+If a payment fails but money is deducted, it is usually refunded automatically within a few days."
+How long does it take to process a refund?,Visa,low,respond,"Based on our support documentation:
+
+If a payment fails but money is deducted, it is usually refunded automatically within a few days."

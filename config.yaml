@@ -1,0 +1,55 @@
+# LLM Provider — switch between "groq" and "anthropic" anytime
+# Set the matching API key as an environment variable:
+#   Groq:      export GROQ_API_KEY="gsk_..."
+#   Anthropic: export ANTHROPIC_API_KEY="sk-ant-..."
+llm:
+  provider: "groq"
+  groq_model: "llama-3.3-70b-versatile"
+  anthropic_model: "claude-haiku-4-5-20251001"
+
+services:
+  Visa:
+    description: >
+      Support tickets about Visa credit or debit cards. Covers payment failures,
+      unauthorized or fraudulent transactions, incorrect charges, double billing,
+      refund requests, dispute or chargeback filings, card declined, and
+      unexpected money deductions.
+    keywords: ["card", "payment", "refund", "transaction", "charge", "declined"]
+    risk_words: ["fraud", "unauthorized", "hacked", "stolen"]
+    doc_file: "data/visa_docs.txt"
+
+  HackerRank:
+    description: >
+      Support tickets about the HackerRank coding platform. Covers test case
+      failures, code submission errors, compiler timeouts, wrong output,
+      plagiarism concerns, assessment problems, contest issues, and IDE bugs.
+    keywords: ["hackerrank", "test case", "submit", "code", "compiler", "timeout"]
+    risk_words: ["cheat", "plagiarism"]
+    doc_file: "data/hackerrank_docs.txt"
+
+  Claude:
+    description: >
+      Support tickets about Anthropic's Claude AI API or products. Covers rate
+      limiting, token usage, prompt engineering, model behavior, API authentication,
+      API billing, jailbreak attempts, and harmful output concerns.
+    keywords: ["api", "claude", "rate limit", "token", "prompt", "model"]
+    risk_words: ["abuse", "jailbreak", "harmful"]
+    doc_file: "data/claude_docs.txt"
+
+  Apple:
+    description: >
+      Support tickets about Apple hardware or software. Covers iPhone, MacBook,
+      iPad, iCloud, iOS, macOS, Apple Watch, AirPods, App Store, repair requests,
+      bricked devices, stolen devices, warranty claims, and software exploits.
+    keywords: ["iphone", "macbook", "icloud", "apple", "ios", "repair"]
+    risk_words: ["bricked", "stolen", "exploit"]
+    doc_file: "data/apple_docs.txt"
+
+  Amazon:
+    description: >
+      Support tickets about Amazon's marketplace or Prime service. Covers delivery
+      problems, missing packages, wrong items, return requests, order cancellations,
+      Prime membership issues, fake products, seller scams, and refund requests.
+    keywords: ["prime", "delivery", "amazon", "package", "return", "order"]
+    risk_words: ["scam", "fake", "missing"]
+    doc_file: "data/amazon_docs.txt"
