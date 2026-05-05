@@ -116,9 +116,11 @@ python main.py
 
 ## 📸 Screenshots
 
-*(You can add screenshots of your Streamlit Dashboard here!)*
+### Banner
+![Banner](assets/banner.png)
 
-> **Tip:** Navigate to the "Dashboard" to see analytics, or "Analyze Ticket" to see the real-time explainability engine in action.
+### App UI
+![App UI](assets/image.png)
 
 ---
 
