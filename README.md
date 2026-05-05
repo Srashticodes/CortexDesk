@@ -119,7 +119,7 @@ python main.py
 
 
 ### App UI
-![App UI](assets/image.png)
+
 
 ---
 
