@@ -116,8 +116,7 @@ python main.py
 
 ## 📸 Screenshots
 
-### Banner
-![Banner](assets/banner.png)
+
 
 ### App UI
 ![App UI](assets/image.png)
