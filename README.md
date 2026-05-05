@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="CortexDesk Banner" width="100%">
+  <img src="assets/banner.png" alt="CortexDesk Banner" width="700">
   
   <h1>🧠 CortexDesk Intelligence Engine</h1>
   
@@ -113,7 +113,11 @@ python main.py
 ```
 
 ---
+## 📸 Screenshots
 
+<p align="center">
+  <img src="assets/screenshot.png" width="700"/>
+</p>
 
 
 
