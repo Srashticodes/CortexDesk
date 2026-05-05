@@ -116,7 +116,7 @@ python main.py
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="assets/screenshot.png" width="700"/>
+  <img src="assets/Screenshot (350).png" width="700"/>
 </p>
 
 
