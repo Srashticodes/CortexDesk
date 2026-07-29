@@ -36,3 +36,469 @@
 2026-05-05 19:13:32,664 - triage - INFO - Processing ticket: My apple watch has some issues
 ...
 2026-05-05 19:13:44,242 - triage - INFO - Triage Result - Domain: Apple, Risk: low, Decision: respond
+2026-05-06 04:01:30,499 - triage - INFO - Processing ticket: The test cases are not visible after submitting co...
+2026-05-06 04:01:41,375 - triage - INFO - Triage Result - Domain: HackerRank, Risk: low, Decision: respond
+2026-05-07 00:46:31,271 - triage - INFO - Processing ticket: My apple watch is not connecting to my IPhone....
+2026-05-07 00:46:33,019 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-05-07 00:46:35,158 - triage - INFO - Triage Result - Domain: Apple, Risk: low, Decision: respond
+2026-06-23 16:50:17,799 - triage - INFO - Processing ticket: My apple watch is not connecting with my phone...
+2026-06-23 16:50:19,561 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-06-23 16:50:21,506 - triage - INFO - Triage Result - Domain: Apple, Risk: low, Decision: respond
+2026-06-23 18:02:52,638 - auth - INFO - Users database initialized.
+2026-06-23 18:02:52,652 - auth - INFO - New user registered: test
+2026-06-23 18:02:52,666 - auth - INFO - User logged in: test
+2026-06-23 18:04:06,232 - triage - INFO - Processing ticket: Test ticket...
+2026-06-23 18:04:07,948 - cache_manager - INFO - Cached response for key 0bf5d5513450...
+2026-06-23 18:04:07,948 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-06-23 18:04:09,781 - cache_manager - INFO - Cached response for key 23b65979dc38...
+2026-06-23 18:04:09,781 - triage - INFO - Triage Result - Domain: Claude, Risk: low, Decision: respond, Source: combined_llm
+2026-06-23 18:04:58,699 - triage - INFO - Processing ticket: Test ticket...
+2026-06-23 18:04:58,718 - cache_manager - INFO - Cache HIT for key 0bf5d5513450...
+2026-06-23 18:04:58,718 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-06-23 18:04:58,763 - cache_manager - INFO - Cache HIT for key 23b65979dc38...
+2026-06-23 18:04:58,764 - triage - INFO - Triage Result - Domain: Claude, Risk: low, Decision: respond, Source: combined_llm
+2026-06-23 18:05:08,541 - letter_generator - INFO - LLM unavailable, using template for domain: Visa
+2026-06-23 18:05:24,643 - cache_manager - INFO - Cached response for key db44334dbbb1...
+2026-06-23 18:05:24,644 - letter_generator - INFO - Generated escalation letter via LLM for domain: Visa
+2026-06-23 18:06:13,086 - pdf_export - ERROR - PDF generation failed: Not enough horizontal space to render a single character
+2026-06-23 18:10:43,229 - auth - INFO - Users database initialized.
+2026-06-23 18:10:50,750 - auth - INFO - Users database initialized.
+2026-06-23 18:11:08,300 - auth - INFO - Users database initialized.
+2026-06-23 18:11:08,681 - auth - INFO - Users database initialized.
+2026-06-23 18:11:57,963 - auth - INFO - Users database initialized.
+2026-06-23 18:11:57,990 - auth - INFO - New user registered: testuser
+2026-06-23 18:11:58,289 - auth - INFO - Users database initialized.
+2026-06-23 18:12:21,724 - auth - INFO - Users database initialized.
+2026-06-23 18:12:21,766 - auth - INFO - User logged in: testuser
+2026-06-23 18:12:22,071 - auth - INFO - Users database initialized.
+2026-06-23 18:12:48,103 - auth - INFO - Users database initialized.
+2026-06-23 18:13:06,912 - auth - INFO - Users database initialized.
+2026-06-23 18:13:06,928 - triage - INFO - Processing ticket: I got a charge on my Visa card that I did not auth...
+2026-06-23 18:13:11,139 - cache_manager - INFO - Cached response for key 2f68f0636933...
+2026-06-23 18:13:11,140 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-06-23 18:13:15,982 - cache_manager - INFO - Cached response for key 629aeb1f3ea0...
+2026-06-23 18:13:15,982 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: combined_llm
+2026-06-23 18:13:44,338 - auth - INFO - Users database initialized.
+2026-06-23 18:14:06,459 - auth - INFO - Users database initialized.
+2026-06-23 18:14:06,478 - triage - INFO - Processing ticket: I got a charge on my Visa card that I did not auth...
+2026-06-23 18:14:06,512 - cache_manager - INFO - Cache HIT for key 2f68f0636933...
+2026-06-23 18:14:06,513 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-06-23 18:14:06,536 - cache_manager - INFO - Cache HIT for key 629aeb1f3ea0...
+2026-06-23 18:14:06,537 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: combined_llm
+2026-06-23 18:14:40,008 - auth - INFO - Users database initialized.
+2026-06-23 18:14:57,560 - auth - INFO - Users database initialized.
+2026-06-23 18:15:11,052 - auth - INFO - Users database initialized.
+2026-06-23 18:16:10,969 - auth - INFO - Users database initialized.
+2026-06-23 18:16:13,923 - auth - INFO - Users database initialized.
+2026-06-23 18:16:21,367 - auth - INFO - Users database initialized.
+2026-06-23 18:16:46,793 - auth - INFO - Users database initialized.
+2026-06-23 18:18:56,149 - auth - INFO - Users database initialized.
+2026-07-11 23:03:46,818 - auth - INFO - Users database initialized.
+2026-07-11 23:04:13,152 - auth - INFO - Users database initialized.
+2026-07-11 23:04:23,686 - auth - INFO - Users database initialized.
+2026-07-11 23:04:24,067 - auth - INFO - Users database initialized.
+2026-07-11 23:04:35,399 - auth - INFO - Users database initialized.
+2026-07-11 23:04:35,793 - auth - INFO - Users database initialized.
+2026-07-11 23:04:37,225 - auth - INFO - Users database initialized.
+2026-07-11 23:04:37,610 - auth - INFO - Users database initialized.
+2026-07-11 23:05:00,734 - auth - INFO - Users database initialized.
+2026-07-11 23:05:00,782 - auth - INFO - New user registered: srashti
+2026-07-11 23:05:01,167 - auth - INFO - Users database initialized.
+2026-07-11 23:05:28,524 - auth - INFO - Users database initialized.
+2026-07-11 23:05:28,556 - auth - INFO - User logged in: srashti
+2026-07-11 23:05:28,938 - auth - INFO - Users database initialized.
+2026-07-11 23:05:43,555 - auth - INFO - Users database initialized.
+2026-07-11 23:06:03,254 - auth - INFO - Users database initialized.
+2026-07-11 23:06:03,271 - triage - INFO - Processing ticket: my apple watch is not connecting to my phone...
+2026-07-11 23:06:20,133 - cache_manager - INFO - Cached response for key 07c73a0306f6...
+2026-07-11 23:06:20,134 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-07-11 23:06:36,923 - cache_manager - INFO - Cached response for key abde2b101a33...
+2026-07-11 23:06:36,924 - triage - INFO - Triage Result - Domain: Apple, Risk: low, Decision: respond, Source: combined_llm
+2026-07-11 23:07:06,158 - auth - INFO - Users database initialized.
+2026-07-11 23:07:06,173 - triage - INFO - Processing ticket: my visa card is charges twice
+...
+2026-07-11 23:07:22,893 - cache_manager - INFO - Cached response for key 72d17fc555c6...
+2026-07-11 23:07:22,895 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-07-11 23:07:39,590 - cache_manager - INFO - Cached response for key 2b1a85b1ed21...
+2026-07-11 23:07:39,591 - triage - INFO - Triage Result - Domain: Visa, Risk: medium, Decision: respond_and_escalate, Source: combined_llm
+2026-07-11 23:07:46,086 - auth - INFO - Users database initialized.
+2026-07-11 23:07:51,818 - auth - INFO - Users database initialized.
+2026-07-11 23:07:51,836 - triage - INFO - Processing ticket: my visa card is charges twice
+...
+2026-07-11 23:07:51,871 - cache_manager - INFO - Cache HIT for key 72d17fc555c6...
+2026-07-11 23:07:51,873 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-07-11 23:07:51,902 - cache_manager - INFO - Cache HIT for key 2b1a85b1ed21...
+2026-07-11 23:07:51,905 - triage - INFO - Triage Result - Domain: Visa, Risk: medium, Decision: respond_and_escalate, Source: combined_llm
+2026-07-11 23:07:55,050 - auth - INFO - Users database initialized.
+2026-07-11 23:15:41,334 - triage - INFO - Processing ticket: My Visa card was charged for an unauthorized trans...
+2026-07-11 23:15:41,334 - triage - INFO - Using fast local analysis
+2026-07-11 23:15:41,337 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-11 23:15:41,349 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-11 23:15:56,873 - auth - INFO - Users database initialized.
+2026-07-11 23:17:23,958 - auth - INFO - Users database initialized.
+2026-07-11 23:18:01,111 - auth - INFO - Users database initialized.
+2026-07-11 23:18:01,154 - auth - INFO - User logged in: srashti
+2026-07-11 23:18:01,246 - auth - INFO - Users database initialized.
+2026-07-11 23:18:49,834 - auth - INFO - Users database initialized.
+2026-07-11 23:19:26,650 - auth - INFO - Users database initialized.
+2026-07-11 23:19:26,667 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:19:26,668 - triage - INFO - Using fast local analysis
+2026-07-11 23:19:26,673 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-11 23:20:10,885 - auth - INFO - Users database initialized.
+2026-07-11 23:20:10,903 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:20:10,904 - triage - INFO - Using fast local analysis
+2026-07-11 23:20:10,905 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-11 23:21:17,970 - auth - INFO - Users database initialized.
+2026-07-11 23:21:17,988 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:21:17,990 - triage - INFO - Using fast local analysis
+2026-07-11 23:21:17,991 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-11 23:21:22,460 - auth - INFO - Users database initialized.
+2026-07-11 23:21:22,477 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:21:39,165 - cache_manager - INFO - Cached response for key c49ca176e124...
+2026-07-11 23:21:39,167 - triage - INFO - Used combined analyzer (1 LLM call)
+2026-07-11 23:21:57,921 - auth - INFO - Users database initialized.
+2026-07-11 23:21:57,939 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:21:57,942 - triage - INFO - Using fast local analysis
+2026-07-11 23:21:57,944 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-11 23:22:04,466 - auth - INFO - Users database initialized.
+2026-07-11 23:22:04,482 - triage - INFO - Processing ticket: my visa card is charges twice...
+2026-07-11 23:22:04,482 - triage - INFO - Using fast local analysis
+2026-07-11 23:22:04,483 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-11 23:22:07,561 - auth - INFO - Users database initialized.
+2026-07-11 23:22:37,511 - auth - INFO - Users database initialized.
+2026-07-11 23:22:37,545 - auth - INFO - User logged in: srashti
+2026-07-11 23:22:37,942 - auth - INFO - Users database initialized.
+2026-07-11 23:22:41,966 - auth - INFO - Users database initialized.
+2026-07-11 23:22:55,640 - auth - INFO - Users database initialized.
+2026-07-11 23:22:56,754 - auth - INFO - Users database initialized.
+2026-07-11 23:23:48,129 - cache_manager - INFO - Cached response for key d8359659f26b...
+2026-07-11 23:23:48,130 - triage - INFO - Triage Result - Domain: Visa, Risk: medium, Decision: respond_and_escalate, Source: combined_llm
+2026-07-12 22:28:11,134 - auth - INFO - Users database initialized.
+2026-07-12 22:28:25,544 - auth - INFO - Users database initialized.
+2026-07-12 22:28:25,579 - auth - INFO - User logged in: srashti
+2026-07-12 22:28:25,682 - auth - INFO - Users database initialized.
+2026-07-12 22:28:31,586 - auth - INFO - Users database initialized.
+2026-07-12 22:28:38,601 - auth - INFO - Users database initialized.
+2026-07-12 22:28:40,508 - auth - INFO - Users database initialized.
+2026-07-12 22:28:49,743 - auth - INFO - Users database initialized.
+2026-07-12 22:29:22,276 - auth - INFO - Users database initialized.
+2026-07-12 22:29:36,424 - auth - INFO - Users database initialized.
+2026-07-12 22:29:40,314 - auth - INFO - Users database initialized.
+2026-07-12 22:29:55,144 - auth - INFO - Users database initialized.
+2026-07-12 22:30:00,284 - auth - INFO - Users database initialized.
+2026-07-12 22:30:00,301 - triage - INFO - Processing ticket: My Visa card was charged for an unauthorized trans...
+2026-07-12 22:30:00,302 - triage - INFO - Using fast local analysis
+2026-07-12 22:30:00,308 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-12 22:30:00,356 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:23,481 - auth - INFO - Users database initialized.
+2026-07-12 22:30:23,513 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:27,449 - auth - INFO - Users database initialized.
+2026-07-12 22:30:27,482 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:28,384 - auth - INFO - Users database initialized.
+2026-07-12 22:30:28,413 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:29,119 - auth - INFO - Users database initialized.
+2026-07-12 22:30:29,151 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:29,785 - auth - INFO - Users database initialized.
+2026-07-12 22:30:29,820 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:30,518 - auth - INFO - Users database initialized.
+2026-07-12 22:30:30,549 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:31,188 - auth - INFO - Users database initialized.
+2026-07-12 22:30:31,220 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:31,881 - auth - INFO - Users database initialized.
+2026-07-12 22:30:31,910 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-12 22:30:34,893 - auth - INFO - Users database initialized.
+2026-07-12 22:30:34,922 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:14:34,326 - auth - INFO - Users database initialized.
+2026-07-13 13:14:49,224 - auth - INFO - Users database initialized.
+2026-07-13 13:14:49,251 - auth - INFO - User logged in: srashti
+2026-07-13 13:14:49,335 - auth - INFO - Users database initialized.
+2026-07-13 13:15:03,800 - auth - INFO - Users database initialized.
+2026-07-13 13:15:08,514 - auth - INFO - Users database initialized.
+2026-07-13 13:15:10,589 - auth - INFO - Users database initialized.
+2026-07-13 13:15:18,706 - auth - INFO - Users database initialized.
+2026-07-13 13:15:18,802 - auth - INFO - Users database initialized.
+2026-07-13 13:15:50,740 - auth - INFO - Users database initialized.
+2026-07-13 13:15:50,775 - auth - INFO - User logged in: srashti
+2026-07-13 13:15:50,870 - auth - INFO - Users database initialized.
+2026-07-13 13:15:55,670 - auth - INFO - Users database initialized.
+2026-07-13 13:15:57,563 - auth - INFO - Users database initialized.
+2026-07-13 13:16:21,276 - auth - INFO - Users database initialized.
+2026-07-13 13:16:22,822 - auth - INFO - Users database initialized.
+2026-07-13 13:16:22,837 - triage - INFO - Processing ticket: my visa card was charges twice for single transact...
+2026-07-13 13:16:22,841 - triage - INFO - Using fast local analysis
+2026-07-13 13:16:22,846 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-13 13:16:31,960 - auth - INFO - Users database initialized.
+2026-07-13 13:16:40,674 - auth - INFO - Users database initialized.
+2026-07-13 13:16:45,549 - auth - INFO - Users database initialized.
+2026-07-13 13:16:45,567 - triage - INFO - Processing ticket: My Visa card was charged for an unauthorized trans...
+2026-07-13 13:16:45,567 - triage - INFO - Using fast local analysis
+2026-07-13 13:16:45,568 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-13 13:16:45,645 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:16:56,899 - auth - INFO - Users database initialized.
+2026-07-13 13:16:56,936 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:16:57,960 - auth - INFO - Users database initialized.
+2026-07-13 13:16:57,999 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:17:00,332 - auth - INFO - Users database initialized.
+2026-07-13 13:17:08,754 - auth - INFO - Users database initialized.
+2026-07-13 13:17:11,453 - auth - INFO - Users database initialized.
+2026-07-13 13:33:19,709 - auth - INFO - Users database initialized.
+2026-07-13 13:33:20,331 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:33:36,912 - triage - INFO - Processing ticket: My Visa card has an unauthorized charge and I need...
+2026-07-13 13:33:36,913 - triage - INFO - Using fast local analysis
+2026-07-13 13:33:36,915 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-13 13:36:43,358 - auth - INFO - Users database initialized.
+2026-07-13 13:37:08,721 - auth - INFO - Users database initialized.
+2026-07-13 13:37:08,756 - auth - INFO - User logged in: srashti
+2026-07-13 13:37:08,833 - auth - INFO - Users database initialized.
+2026-07-13 13:37:19,892 - auth - INFO - Users database initialized.
+2026-07-13 13:37:31,216 - auth - INFO - Users database initialized.
+2026-07-13 13:37:50,187 - auth - INFO - Users database initialized.
+2026-07-13 13:37:55,064 - auth - INFO - Users database initialized.
+2026-07-13 13:37:55,086 - triage - INFO - Processing ticket: My Visa card was charged for an unauthorized trans...
+2026-07-13 13:37:55,086 - triage - INFO - Using fast local analysis
+2026-07-13 13:37:55,090 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-13 13:37:55,132 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:37:59,807 - auth - INFO - Users database initialized.
+2026-07-13 13:37:59,842 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:01,592 - auth - INFO - Users database initialized.
+2026-07-13 13:38:01,625 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:02,332 - auth - INFO - Users database initialized.
+2026-07-13 13:38:02,365 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:02,640 - auth - INFO - Users database initialized.
+2026-07-13 13:38:02,674 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:02,850 - auth - INFO - Users database initialized.
+2026-07-13 13:38:02,879 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:03,051 - auth - INFO - Users database initialized.
+2026-07-13 13:38:03,081 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:03,248 - auth - INFO - Users database initialized.
+2026-07-13 13:38:03,281 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:03,462 - auth - INFO - Users database initialized.
+2026-07-13 13:38:03,495 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:03,810 - auth - INFO - Users database initialized.
+2026-07-13 13:38:03,842 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:04,013 - auth - INFO - Users database initialized.
+2026-07-13 13:38:04,044 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:04,220 - auth - INFO - Users database initialized.
+2026-07-13 13:38:04,256 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:06,475 - auth - INFO - Users database initialized.
+2026-07-13 13:38:06,508 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:07,934 - auth - INFO - Users database initialized.
+2026-07-13 13:38:07,966 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:08,651 - auth - INFO - Users database initialized.
+2026-07-13 13:38:08,682 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-13 13:38:14,634 - auth - INFO - Users database initialized.
+2026-07-13 13:38:24,006 - auth - INFO - Users database initialized.
+2026-07-13 13:38:32,207 - auth - INFO - Users database initialized.
+2026-07-13 13:38:36,517 - auth - INFO - Users database initialized.
+2026-07-13 13:38:42,117 - auth - INFO - Users database initialized.
+2026-07-13 13:55:10,855 - auth - INFO - Users database initialized.
+2026-07-13 13:55:48,627 - auth - INFO - Users database initialized.
+2026-07-13 13:56:05,630 - auth - INFO - Users database initialized.
+2026-07-13 13:56:05,943 - auth - INFO - Users database initialized.
+2026-07-13 13:56:59,672 - auth - INFO - Users database initialized.
+2026-07-13 13:56:59,719 - auth - INFO - New user registered: testadmin
+2026-07-13 13:56:59,978 - auth - INFO - Users database initialized.
+2026-07-13 13:57:35,092 - auth - INFO - Users database initialized.
+2026-07-13 13:57:35,138 - auth - INFO - User logged in: testadmin
+2026-07-13 13:57:35,461 - auth - INFO - Users database initialized.
+2026-07-13 13:57:53,711 - auth - INFO - Users database initialized.
+2026-07-13 13:58:28,585 - auth - INFO - Users database initialized.
+2026-07-13 13:58:28,637 - triage - INFO - Processing ticket: I need help, my visa card was charged twice for a ...
+2026-07-13 13:58:28,639 - triage - INFO - Using fast local analysis
+2026-07-13 13:58:28,641 - triage - INFO - Triage Result - Domain: Visa, Risk: medium, Decision: respond_and_escalate, Source: separate_fast_keywords
+2026-07-13 13:58:59,852 - auth - INFO - Users database initialized.
+2026-07-13 13:59:19,113 - auth - INFO - Users database initialized.
+2026-07-13 13:59:55,099 - auth - INFO - Users database initialized.
+2026-07-13 14:00:23,529 - auth - INFO - Users database initialized.
+2026-07-13 14:07:15,554 - auth - INFO - Users database initialized.
+2026-07-13 14:07:20,268 - auth - INFO - Users database initialized.
+2026-07-13 14:07:27,991 - auth - INFO - Users database initialized.
+2026-07-13 14:07:39,262 - auth - INFO - Users database initialized.
+2026-07-13 14:07:41,252 - auth - INFO - Users database initialized.
+2026-07-13 14:07:43,628 - auth - INFO - Users database initialized.
+2026-07-13 14:07:49,119 - auth - INFO - Users database initialized.
+2026-07-13 14:07:52,288 - auth - INFO - Users database initialized.
+2026-07-23 23:03:26,600 - auth - INFO - Users database initialized.
+2026-07-23 23:03:42,772 - auth - INFO - Users database initialized.
+2026-07-23 23:03:42,817 - auth - INFO - User logged in: srashti
+2026-07-23 23:03:42,901 - auth - INFO - Users database initialized.
+2026-07-23 23:03:54,470 - auth - INFO - Users database initialized.
+2026-07-23 23:03:57,858 - auth - INFO - Users database initialized.
+2026-07-23 23:06:27,237 - auth - INFO - Users database initialized.
+2026-07-23 23:12:37,620 - auth - INFO - Users database initialized.
+2026-07-23 23:12:51,142 - auth - INFO - Users database initialized.
+2026-07-23 23:12:51,176 - auth - INFO - User logged in: srashti
+2026-07-23 23:12:51,290 - auth - INFO - Users database initialized.
+2026-07-23 23:12:57,325 - auth - INFO - Users database initialized.
+2026-07-23 23:13:00,265 - auth - INFO - Users database initialized.
+2026-07-23 23:16:22,211 - auth - INFO - Users database initialized.
+2026-07-23 23:16:26,085 - auth - INFO - Users database initialized.
+2026-07-23 23:17:08,685 - auth - INFO - Users database initialized.
+2026-07-23 23:17:22,557 - auth - INFO - Users database initialized.
+2026-07-23 23:17:22,580 - auth - INFO - User logged in: srashti
+2026-07-23 23:17:22,680 - auth - INFO - Users database initialized.
+2026-07-23 23:17:25,628 - auth - INFO - Users database initialized.
+2026-07-23 23:17:29,940 - auth - INFO - Users database initialized.
+2026-07-23 23:18:45,707 - auth - INFO - Users database initialized.
+2026-07-23 23:18:53,717 - auth - INFO - Users database initialized.
+2026-07-23 23:18:57,707 - auth - INFO - Users database initialized.
+2026-07-23 23:19:09,106 - auth - INFO - Users database initialized.
+2026-07-23 23:19:16,979 - auth - INFO - Users database initialized.
+2026-07-23 23:19:18,831 - auth - INFO - Users database initialized.
+2026-07-23 23:19:20,966 - auth - INFO - Users database initialized.
+2026-07-23 23:19:39,654 - auth - INFO - Users database initialized.
+2026-07-23 23:25:07,767 - auth - INFO - Users database initialized.
+2026-07-23 23:25:17,334 - auth - INFO - Users database initialized.
+2026-07-23 23:26:10,149 - auth - INFO - Users database initialized.
+2026-07-23 23:26:14,217 - auth - INFO - Users database initialized.
+2026-07-23 23:26:15,866 - auth - INFO - Users database initialized.
+2026-07-23 23:26:17,249 - auth - INFO - Users database initialized.
+2026-07-23 23:26:24,228 - auth - INFO - Users database initialized.
+2026-07-23 23:26:25,691 - auth - INFO - Users database initialized.
+2026-07-24 22:30:31,973 - auth - INFO - Users database initialized.
+2026-07-24 22:30:59,234 - auth - INFO - Users database initialized.
+2026-07-24 22:30:59,273 - auth - INFO - User logged in: srashti
+2026-07-24 22:30:59,374 - auth - INFO - Users database initialized.
+2026-07-24 22:31:02,845 - auth - INFO - Users database initialized.
+2026-07-24 22:31:15,071 - auth - INFO - Users database initialized.
+2026-07-24 22:31:21,272 - auth - INFO - Users database initialized.
+2026-07-24 22:31:21,301 - triage - INFO - Processing ticket:  My Visa card was charged for an unauthorized tran...
+2026-07-24 22:31:21,302 - triage - INFO - Using fast local analysis
+2026-07-24 22:31:21,307 - triage - INFO - Triage Result - Domain: Visa, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-24 22:31:21,373 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-24 22:31:29,426 - auth - INFO - Users database initialized.
+2026-07-24 22:31:29,467 - letter_generator - INFO - Generated company letter via template for domain: Visa
+2026-07-24 22:31:36,165 - auth - INFO - Users database initialized.
+2026-07-24 22:31:40,923 - auth - INFO - Users database initialized.
+2026-07-24 22:31:48,439 - auth - INFO - Users database initialized.
+2026-07-24 22:32:00,387 - auth - INFO - Users database initialized.
+2026-07-24 22:32:03,386 - auth - INFO - Users database initialized.
+2026-07-24 22:48:36,661 - auth - INFO - Users database initialized.
+2026-07-24 22:48:55,328 - auth - INFO - Users database initialized.
+2026-07-24 22:48:57,135 - auth - INFO - Users database initialized.
+2026-07-24 22:48:58,995 - auth - INFO - Users database initialized.
+2026-07-24 22:49:00,500 - auth - INFO - Users database initialized.
+2026-07-24 22:49:29,887 - auth - INFO - Users database initialized.
+2026-07-24 22:49:45,349 - auth - INFO - Users database initialized.
+2026-07-24 22:49:46,484 - auth - INFO - Users database initialized.
+2026-07-24 22:54:29,213 - auth - INFO - Users database initialized.
+2026-07-24 22:54:33,462 - auth - INFO - Users database initialized.
+2026-07-24 22:54:33,680 - auth - INFO - Users database initialized.
+2026-07-24 23:00:04,463 - auth - INFO - Users database initialized.
+2026-07-24 23:00:20,738 - auth - INFO - Users database initialized.
+2026-07-24 23:00:20,776 - auth - INFO - User logged in: srashti
+2026-07-24 23:00:20,947 - auth - INFO - Users database initialized.
+2026-07-24 23:09:12,172 - auth - INFO - Users database initialized.
+2026-07-24 23:09:16,455 - auth - INFO - Users database initialized.
+2026-07-24 23:09:20,428 - auth - INFO - Users database initialized.
+2026-07-24 23:09:21,825 - auth - INFO - Users database initialized.
+2026-07-24 23:09:22,901 - auth - INFO - Users database initialized.
+2026-07-24 23:09:23,855 - auth - INFO - Users database initialized.
+2026-07-24 23:09:26,304 - auth - INFO - Users database initialized.
+2026-07-24 23:09:28,392 - auth - INFO - Users database initialized.
+2026-07-24 23:09:30,220 - auth - INFO - Users database initialized.
+2026-07-24 23:09:37,319 - auth - INFO - Users database initialized.
+2026-07-24 23:09:46,675 - auth - INFO - Users database initialized.
+2026-07-24 23:09:50,628 - auth - INFO - Users database initialized.
+2026-07-24 23:10:00,252 - auth - INFO - Users database initialized.
+2026-07-24 23:18:57,557 - auth - INFO - Users database initialized.
+2026-07-24 23:18:57,823 - auth - INFO - Users database initialized.
+2026-07-24 23:28:35,042 - auth - INFO - Users database initialized.
+2026-07-24 23:28:44,491 - auth - INFO - Users database initialized.
+2026-07-24 23:28:44,536 - auth - INFO - User logged in: srashti
+2026-07-24 23:28:44,702 - auth - INFO - Users database initialized.
+2026-07-24 23:29:45,913 - auth - INFO - Users database initialized.
+2026-07-24 23:29:49,156 - auth - INFO - Users database initialized.
+2026-07-24 23:29:51,126 - auth - INFO - Users database initialized.
+2026-07-24 23:29:52,682 - auth - INFO - Users database initialized.
+2026-07-24 23:29:57,464 - auth - INFO - Users database initialized.
+2026-07-24 23:29:57,491 - triage - INFO - Processing ticket: my visa card was charges twice for single transact...
+2026-07-24 23:29:57,491 - triage - INFO - Using fast local analysis
+2026-07-24 23:29:57,493 - triage - INFO - Triage Result - Domain: Visa, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-24 23:33:39,169 - auth - INFO - Users database initialized.
+2026-07-24 23:37:12,604 - auth - INFO - Users database initialized.
+2026-07-24 23:39:30,693 - auth - INFO - Users database initialized.
+2026-07-24 23:41:30,941 - auth - INFO - Users database initialized.
+2026-07-24 23:44:07,956 - auth - INFO - Users database initialized.
+2026-07-25 22:06:08,697 - auth - INFO - Users database initialized.
+2026-07-25 22:26:43,069 - auth - INFO - Users database initialized.
+2026-07-25 22:36:34,280 - auth - INFO - Users database initialized.
+2026-07-25 22:38:50,319 - auth - INFO - Users database initialized.
+2026-07-25 22:39:01,731 - auth - INFO - Users database initialized.
+2026-07-25 22:39:01,771 - auth - INFO - User logged in: srashti
+2026-07-25 22:39:01,885 - auth - INFO - Users database initialized.
+2026-07-25 22:39:07,777 - auth - INFO - Users database initialized.
+2026-07-25 22:39:09,562 - auth - INFO - Users database initialized.
+2026-07-25 22:39:21,387 - auth - INFO - Users database initialized.
+2026-07-25 22:39:23,591 - auth - INFO - Users database initialized.
+2026-07-25 22:39:25,832 - auth - INFO - Users database initialized.
+2026-07-25 22:39:36,080 - auth - INFO - Users database initialized.
+2026-07-25 22:39:36,117 - auth - INFO - User logged in: srashti
+2026-07-25 22:39:36,262 - auth - INFO - Users database initialized.
+2026-07-25 22:39:47,425 - auth - INFO - Users database initialized.
+2026-07-25 22:39:48,624 - auth - INFO - Users database initialized.
+2026-07-25 22:44:22,868 - auth - INFO - Users database initialized.
+2026-07-25 22:44:29,018 - auth - INFO - Users database initialized.
+2026-07-25 22:44:32,719 - auth - INFO - Users database initialized.
+2026-07-25 22:44:34,466 - auth - INFO - Users database initialized.
+2026-07-25 22:44:36,210 - auth - INFO - Users database initialized.
+2026-07-25 22:44:37,489 - auth - INFO - Users database initialized.
+2026-07-25 22:44:38,661 - auth - INFO - Users database initialized.
+2026-07-25 22:44:40,098 - auth - INFO - Users database initialized.
+2026-07-25 22:44:41,386 - auth - INFO - Users database initialized.
+2026-07-25 22:44:43,358 - auth - INFO - Users database initialized.
+2026-07-25 22:44:44,040 - auth - INFO - Users database initialized.
+2026-07-25 22:44:46,242 - auth - INFO - Users database initialized.
+2026-07-25 22:44:48,223 - auth - INFO - Users database initialized.
+2026-07-25 22:45:01,377 - auth - INFO - Users database initialized.
+2026-07-25 22:46:09,737 - auth - INFO - Users database initialized.
+2026-07-25 22:46:09,768 - triage - INFO - Processing ticket: I was not using my amazon account from a couple of...
+2026-07-25 22:46:09,771 - triage - INFO - Using fast local analysis
+2026-07-25 22:46:09,776 - triage - INFO - Triage Result - Domain: Amazon, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-25 22:46:47,382 - auth - INFO - Users database initialized.
+2026-07-25 22:46:47,411 - triage - INFO - Processing ticket: I was not using my amazon account from a couple of...
+2026-07-25 22:46:47,412 - triage - INFO - Using fast local analysis
+2026-07-25 22:46:47,416 - triage - INFO - Triage Result - Domain: Amazon, Risk: high, Decision: escalate, Source: separate_fast_keywords
+2026-07-26 22:57:14,137 - auth - INFO - Users database initialized.
+2026-07-26 22:57:40,381 - auth - INFO - Users database initialized.
+2026-07-26 22:57:40,432 - auth - INFO - User logged in: srashti
+2026-07-26 22:57:40,574 - auth - INFO - Users database initialized.
+2026-07-26 22:57:44,661 - auth - INFO - Users database initialized.
+2026-07-26 23:00:00,052 - auth - INFO - Users database initialized.
+2026-07-26 23:00:41,120 - auth - INFO - Users database initialized.
+2026-07-26 23:00:41,140 - triage - INFO - Processing ticket: My claude is not working properly it is giving ver...
+2026-07-26 23:00:41,141 - triage - INFO - Using fast local analysis
+2026-07-26 23:00:41,150 - triage - INFO - Triage Result - Domain: Claude, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-27 23:17:25,119 - auth - INFO - Users database initialized.
+2026-07-27 23:17:38,623 - auth - INFO - Users database initialized.
+2026-07-27 23:17:38,662 - auth - INFO - User logged in: srashti
+2026-07-27 23:17:38,801 - auth - INFO - Users database initialized.
+2026-07-27 23:17:42,124 - auth - INFO - Users database initialized.
+2026-07-27 23:17:50,153 - auth - INFO - Users database initialized.
+2026-07-27 23:21:19,409 - auth - INFO - Users database initialized.
+2026-07-27 23:21:34,710 - auth - INFO - Users database initialized.
+2026-07-27 23:21:34,757 - auth - INFO - User logged in: srashti
+2026-07-27 23:21:34,876 - auth - INFO - Users database initialized.
+2026-07-27 23:21:43,461 - auth - INFO - Users database initialized.
+2026-07-27 23:21:50,788 - auth - INFO - Users database initialized.
+2026-07-27 23:21:52,514 - auth - INFO - Users database initialized.
+2026-07-27 23:22:30,375 - auth - INFO - Users database initialized.
+2026-07-27 23:22:30,398 - triage - INFO - Processing ticket: I recently bought apple music subscription of 6 mo...
+2026-07-27 23:22:30,399 - triage - INFO - Using fast local analysis
+2026-07-27 23:22:30,407 - triage - INFO - Triage Result - Domain: Apple, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-27 23:23:27,959 - auth - INFO - Users database initialized.
+2026-07-27 23:23:27,993 - triage - INFO - Processing ticket: my netflix keeps crashing on my tv...
+2026-07-27 23:23:27,994 - triage - INFO - Using fast local analysis
+2026-07-27 23:23:27,995 - triage - INFO - Triage Result - Domain: Netflix, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-27 23:24:06,395 - auth - INFO - Users database initialized.
+2026-07-27 23:24:06,417 - triage - INFO - Processing ticket: My Netflix app keeps crashing on my smart TV...
+2026-07-27 23:24:06,417 - triage - INFO - Using fast local analysis
+2026-07-27 23:24:06,419 - triage - INFO - Triage Result - Domain: Netflix, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-27 23:24:11,823 - auth - INFO - Users database initialized.
+2026-07-27 23:24:11,851 - triage - INFO - Processing ticket: My Netflix app keeps crashing on my smart TV...
+2026-07-27 23:24:11,852 - triage - INFO - Using fast local analysis
+2026-07-27 23:24:11,854 - triage - INFO - Triage Result - Domain: Netflix, Risk: low, Decision: respond, Source: separate_fast_keywords
+2026-07-27 23:24:12,962 - auth - INFO - Users database initialized.
+2026-07-27 23:24:12,988 - triage - INFO - Processing ticket: My Netflix app keeps crashing on my smart TV...
+2026-07-27 23:24:12,989 - triage - INFO - Using fast local analysis
+2026-07-27 23:24:12,990 - triage - INFO - Triage Result - Domain: Netflix, Risk: low, Decision: respond, Source: separate_fast_keywords

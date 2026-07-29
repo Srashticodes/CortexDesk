@@ -178,7 +178,7 @@ def _fallback_score(text: str, triggers: list[str], dominant_category: str) -> d
 # ---------------------------------------------------------------------------
 # Public API — same signature as the original, fully backwards compatible
 # ---------------------------------------------------------------------------
-def analyze_risk(text: str) -> dict:
+def analyze_risk(text: str, use_ai: bool = True) -> dict:
     """
     Assess the risk level of a support ticket.
 
@@ -207,7 +207,7 @@ def analyze_risk(text: str) -> dict:
     regex_triggers, dominant_category = _regex_scan(text)
 
     # Step 2 — try LLM for semantic understanding
-    llm_result = _call_llm(text)
+    llm_result = _call_llm(text) if use_ai else None
     if llm_result:
         # Merge regex triggers into LLM result so the UI always has trigger phrases
         # LLM triggers take priority; regex triggers fill in any gaps

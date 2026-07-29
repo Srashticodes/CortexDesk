@@ -4,3 +4,6 @@ __pycache__/
 *.pkl
 *.log
 output.csv
+data/users.db
+data/cache.db
+.streamlit/

@@ -1,4 +1,5 @@
 import json
+import re
 from llm_client import call_llm
 
 # ---------------------------------------------------------------------------
@@ -29,12 +30,83 @@ Rules:
 - Keep the response concise — 3 to 6 sentences for low-risk tickets, slightly longer for high-risk.
 - Do NOT include subject lines, JSON, or any formatting markers. Just the reply text.
 - Do NOT start with "I" — begin with the customer in mind (e.g. "Thank you for reaching out..." or "We're sorry to hear...").
+- Paraphrase the knowledge-base snippets instead of repeating them word-for-word. Use them as the factual source, then rewrite naturally.
 """
 
 
 # ---------------------------------------------------------------------------
 # Internal helpers
 # ---------------------------------------------------------------------------
+def compress_docs(docs: list[str], max_docs: int = 3, max_chars: int = 2200) -> list[str]:
+    """Trim and de-duplicate retrieved docs before sending them to the LLM."""
+    cleaned: list[str] = []
+    seen: set[str] = set()
+
+    for doc in docs or []:
+        text = " ".join(str(doc).strip().split())
+        if not text:
+            continue
+        key = text.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        cleaned.append(text)
+
+    if not cleaned:
+        return []
+
+    compressed: list[str] = []
+    current_chars = 0
+    for text in cleaned[:max_docs]:
+        if current_chars + len(text) + 1 > max_chars and compressed:
+            break
+        compressed.append(text)
+        current_chars += len(text) + 1
+
+    return compressed
+
+
+def _should_use_template(ticket: str, decision: str, category: str, triggers: list[str]) -> bool:
+    """Use a concise template for common issues to avoid an unnecessary LLM call."""
+    if decision != "respond":
+        return False
+
+    lowered = (ticket or "").lower()
+    common_terms = [
+        "refund", "charged twice", "duplicate charge", "billing",
+        "password", "login", "reset", "account recovery", "cancel subscription",
+        "continue watching", "watching list", "watchlist", "stream", "playback", "error while streaming",
+    ]
+    if any(term in lowered for term in common_terms):
+        return True
+    return category == "BILLING_ISSUE" and any("charge" in t.lower() or "refund" in t.lower() for t in triggers)
+
+
+def _template_response(ticket: str) -> str:
+    """Compact, support-style response for common low-risk issues."""
+    lowered = (ticket or "").lower()
+
+    if any(term in lowered for term in ["continue watching", "watching list", "watchlist", "stream", "playback", "error while streaming"]):
+        return (
+            "Thanks for letting us know. It looks like your continue watching list may need a refresh, so please restart the Netflix app and make sure you are on the correct profile. "
+            "If the list still does not update, sign out and sign back in to refresh your progress."
+        )
+    if any(term in lowered for term in ["refund", "charged twice", "duplicate charge", "billing"]):
+        return (
+            "Thank you for flagging this. We have identified a billing concern that should be reviewed carefully. "
+            "Please keep your order or transaction details handy, and our support team will follow up with the appropriate next steps."
+        )
+    if any(term in lowered for term in ["password", "login", "reset", "account recovery"]):
+        return (
+            "Thanks for reaching out. Please try the standard account recovery steps first, and verify the details you entered. "
+            "If the issue continues, our support team will guide you through the next steps."
+        )
+    return (
+        "Thanks for reaching out. We have noted your request and will review it with the relevant support guidance. "
+        "If more details are needed, our team will follow up promptly."
+    )
+
+
 def _build_user_prompt(
     ticket: str,
     domains: list[str],
@@ -46,8 +118,10 @@ def _build_user_prompt(
 ) -> str:
     """Assembles the user-turn message sent to the LLM."""
 
+    compact_docs = compress_docs(docs, max_docs=3, max_chars=MAX_DOC_CHARS)
+
     # Truncate docs to avoid blowing the context window
-    combined_docs = "\n".join(f"- {d.strip()}" for d in docs if d.strip())
+    combined_docs = "\n".join(f"- {d.strip()}" for d in compact_docs if d.strip())
     if len(combined_docs) > MAX_DOC_CHARS:
         combined_docs = combined_docs[:MAX_DOC_CHARS] + "\n[...additional docs truncated]"
 
@@ -69,7 +143,10 @@ CONTEXT:
 KNOWLEDGE BASE SNIPPETS:
 {docs_section}
 
-Write the customer reply now."""
+Write the customer reply now.
+Use a warm, natural tone and do not quote the snippets verbatim.
+Summarize the relevant facts in your own words.
+Avoid document-style language and keep the reply friendly and natural."""
 
 
 def _call_llm(user_prompt: str) -> str | None:
@@ -89,6 +166,7 @@ def _fallback_response(
     category: str,
     domains: list[str],
     triggers: list[str],
+    ticket: str = "",
 ) -> str:
     """
     Template-based response. Identical logic to the original responder.py so
@@ -152,14 +230,45 @@ def _fallback_response(
         or "Our team will review your request and respond shortly."
     )
 
+    docs_summary = _summarize_docs_for_reply(docs, ticket)
+    support_summary = (
+        f"\n\nAccording to the relevant knowledge base, {docs_summary}"
+        if docs_summary else "\n\nOur team will review your request and respond shortly."
+    )
+
     return (
         f"{greeting}\n\n"
         f"{instruction}"
-        f"{trigger_hint}\n\n"
-        f"{formatted_docs}\n\n"
+        f"{trigger_hint}"
+        f"{support_summary}\n\n"
         f"{closing}{escalation_note}{domain_context}\n"
     )
 
+
+def _summarize_docs_for_reply(docs: list[str], ticket: str = "") -> str:
+    """Create a short, user-facing summary from retrieved knowledge base snippets and the ticket."""
+    ticket_text = (ticket or "").lower()
+    doc_text = " ".join(str(doc).strip().lower() for doc in docs if str(doc).strip())
+
+    if any(term in ticket_text for term in ["continue watching", "watching list", "watchlist", "profile", "playback", "stream", "streaming error"]):
+        return "refreshing the app and making sure you are on the right profile often helps resolve continue watching list issues."
+    if any(term in ticket_text for term in ["password", "login", "reset", "account recovery"]):
+        return "account recovery steps and login verification are the best next steps for this issue."
+    if any(term in ticket_text for term in ["refund", "charged twice", "duplicate charge", "billing"]):
+        return "we recommend reviewing the payment or refund details and confirming the transaction information."
+    if any(term in ticket_text for term in ["unauthorized", "fraud", "compromised", "unknown purchase"]):
+        return "securing the account and reviewing any unfamiliar activity is the prioritized action."
+
+    if any(term in doc_text for term in ["continue watching", "watching list", "watchlist", "profile", "playback", "stream", "streaming"]):
+        return "refreshing the app, checking your connection, and confirming the correct profile are good first steps."
+    if any(term in doc_text for term in ["refund", "charge", "billing", "duplicate charge", "authorization"]):
+        return "we recommend reviewing the payment or refund details and confirming the transaction information."
+    if any(term in doc_text for term in ["password", "login", "reset", "account recovery"]):
+        return "account recovery steps and login verification are the best next steps for this issue."
+    if any(term in doc_text for term in ["unauthorized", "fraud", "suspicious", "unknown purchase"]):
+        return "securing the account and reviewing any unfamiliar activity is the prioritized action."
+
+    return "we found relevant support guidance for this issue and will make sure the team follows it."
 
 # ---------------------------------------------------------------------------
 # Public API — same signature as the original, fully backwards compatible
@@ -193,6 +302,11 @@ def generate_response(
     domains  = domains  or []
     triggers = triggers or []
 
+    compact_docs = compress_docs(docs, max_docs=3, max_chars=MAX_DOC_CHARS)
+
+    if ticket and _should_use_template(ticket, decision, category, triggers):
+        return _template_response(ticket)
+
     # --- Try the LLM path ---
     if ticket:
         user_prompt = _build_user_prompt(
@@ -202,7 +316,7 @@ def generate_response(
             decision=decision,
             category=category,
             triggers=triggers,
-            docs=docs,
+            docs=compact_docs,
         )
         llm_response = _call_llm(user_prompt)
         if llm_response:
@@ -210,11 +324,12 @@ def generate_response(
 
     # --- Fallback to templates ---
     return _fallback_response(
-        docs=docs,
+        docs=compact_docs,
         decision=decision,
         category=category,
         domains=domains,
         triggers=triggers,
+        ticket=ticket,
     )
 
 

@@ -35,6 +35,11 @@ DOMAIN_DESCRIPTIONS = {
         "missing packages, wrong items, return requests, order cancellations, "
         "Prime membership issues, fake products, seller scams, and refund requests."
     ),
+    "Netflix": (
+        "Issues with Netflix subscriptions or streaming service. Includes billing problems, "
+        "account access issues, streaming errors, device playback problems, canceled "
+        "subscriptions, and account security concerns."
+    ),
 }
 
 # Confidence threshold below which we call the LLM for a second opinion

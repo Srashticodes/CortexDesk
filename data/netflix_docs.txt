@@ -1,0 +1,5 @@
+If your Netflix account was compromised, change your password immediately and review recent devices and profile activity.
+If you are being billed for a Netflix subscription you no longer want, cancel the plan from your account settings and check for any pending refunds.
+If Netflix shows an error while streaming, try restarting the app, checking your internet connection, and updating the app to the latest version.
+If you were charged twice for a Netflix subscription, review your billing history and contact support to request a correction or refund.
+If your Netflix account is locked, use the password reset flow and verify your recovery email or phone number.

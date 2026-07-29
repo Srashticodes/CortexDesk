@@ -7,6 +7,10 @@ llm:
   groq_model: "llama-3.3-70b-versatile"
   anthropic_model: "claude-haiku-4-5-20251001"
 
+cache:
+  llm_ttl_seconds: 3600
+  enabled: true
+
 services:
   Visa:
     description: >
@@ -53,3 +57,12 @@ services:
     keywords: ["prime", "delivery", "amazon", "package", "return", "order"]
     risk_words: ["scam", "fake", "missing"]
     doc_file: "data/amazon_docs.txt"
+
+  Netflix:
+    description: >
+      Support tickets about Netflix subscriptions or streaming service. Covers
+      billing problems, account access issues, streaming errors, playback problems,
+      canceled subscriptions, and account security concerns.
+    keywords: ["netflix", "streaming", "subscription", "billing", "account"]
+    risk_words: ["hacked", "unauthorized", "compromised"]
+    doc_file: "data/netflix_docs.txt"

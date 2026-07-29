@@ -13,5 +13,10 @@ services = {
         "keywords": ["api", "claude", "rate limit"],
         "risk_words": [],
         "docs": []
+    },
+    "Netflix": {
+        "keywords": ["netflix", "streaming", "subscription", "billing"],
+        "risk_words": ["hacked", "unauthorized"],
+        "docs": []
     }
 }
