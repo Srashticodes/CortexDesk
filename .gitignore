@@ -6,4 +6,4 @@ __pycache__/
 output.csv
 data/users.db
 data/cache.db
-.streamlit/
+.streamlit/.env

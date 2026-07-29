@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="CortexDesk Banner" width="700">
+  <img src="assets/banner.png" alt="CortexDesk Banner" width="100">
   
   <h1>🧠 CortexDesk Intelligence Engine</h1>
   
